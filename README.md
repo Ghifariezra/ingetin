@@ -1,6 +1,6 @@
 <div align="center">
 
-  <a href="https://www.ezdev.xyz/">
+  <a href="https://ingetin-one.vercel.app/">
     <img src="public/ui-preview/home/introduction.png" alt="Ingetin Project Banner" width="100%" style="border-radius: 10px;" />
   </a>
 
