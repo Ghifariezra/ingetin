@@ -7,7 +7,7 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const nextConfig = {
     // config lain di sini...
     compiler:{
-        removeConsole: process.env.NODE_ENV === "production",
+        // removeConsole: process.env.NODE_ENV === "production",
         reactRemoveProperties: true,
     },
     poweredByHeader: false,
