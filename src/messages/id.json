@@ -1,0 +1,145 @@
+{
+    "App": {
+        "title": "Ingetin",
+        "description": "Sahabat UMKM agar tagihan lancar."
+    },
+    "Dashboard": {
+        "title": "Dashboard",
+        "welcome": "Selamat datang kembali,"
+    },
+    "Preferences": {
+        "title": "Tampilan",
+        "language": "Bahasa",
+        "theme": "Tema"
+    },
+    "LanguageSwitcher": {
+        "label": "Ganti Bahasa",
+        "current_id": "Indonesia",
+        "current_en": "Inggris"
+    },
+    "ThemeSwitcher": {
+        "label": "Ganti Tema",
+        "current_light": "Terang",
+        "current_dark": "Gelap",
+        "current_system": "Sistem",
+        "switch_to_light": "Ganti ke Terang",
+        "switch_to_dark": "Ganti ke Gelap",
+        "switch_to_system": "Ganti ke Sistem"
+    },
+    "Metadata": {
+        "title": "Ingetin - Solusi Tagih Utang Tanpa Sungkan",
+        "description": "Bantu UMKM dan freelancer mencatat order dan menagih pembayaran klien secara otomatis dan profesional."
+    },
+    "Links": {
+        "home": {
+            "label": "Beranda",
+            "href": "/"
+        },
+        "features": {
+            "label": "Fitur",
+            "href": "/fitur"
+        },
+        "pricing": {
+            "label": "Harga",
+            "href": "/harga"
+        },
+        "login": {
+            "label": "Masuk",
+            "href": "/masuk"
+        },
+        "register": {
+            "label": "Daftar Gratis",
+            "href": "/daftar"
+        }
+    },
+    "Home": {
+        "Introduction": {
+            "label": "Perkenalan",
+            "title": "Nagih Klien Tanpa Rasa 'Ga Enakan'",
+            "description": "Solusi otomatisasi penagihan invoice untuk freelancer dan UMKM agar cashflow tetap lancar.",
+            "href": "#perkenalan",
+            "subtitle": "Catat orderanmu, lalu biarkan sistem kami mengirim pengingat tagihan yang sopan & profesional secara otomatis. Kamu fokus berkarya, biar kami yang urus drama penagihan.",
+            "cta_primary": "Coba Gratis Sekarang",
+            "cta_primary_href": "/daftar",
+            "cta_secondary": "Lihat Cara Kerja",
+            "cta_secondary_href": "#solution"
+        },
+        "Problem": {
+            "label": "Masalah",
+            "title": "Pernah Mengalami Ini?",
+            "description": "Masalah klasik yang sering menghambat pertumbuhan bisnis dan kesehatan cashflow-mu.",
+            "href": "#masalah",
+            "items": [
+                "Chat orderan tertumpuk, lupa siapa yang belum lunas.",
+                "Mau menagih tapi sungkan, takut dianggap galak atau tidak sopan.",
+                "Di atas kertas untung besar, tapi uang cash tidak ada di tangan."
+            ]
+        },
+        "Solution": {
+            "label": "Solusi",
+            "title": "Rapikan Bisnis dalam 3 Langkah",
+            "description": "Sistem simpel untuk mengubah cara kamu mengelola piutang klien selamanya.",
+            "href": "#solusi",
+            "step_1": "1. Catat Order",
+            "step_1_desc": "Cukup masukkan nama klien, detail order, dan tanggal jatuh tempo.",
+            "step_2": "2. Pantau Dashboard",
+            "step_2_desc": "Lihat status pembayaran secara real-time: siapa yang lunas dan siapa yang menunggak.",
+            "step_3": "3. Terima Pembayaran",
+            "step_3_desc": "Sistem akan mengirim email pengingat otomatis (H-3, Hari H, Lewat Jatuh Tempo). Kamu tinggal terima notifikasi lunas."
+        }
+    },
+    "Features": {
+        "title": "Fitur Simpel, Dampak Besar",
+        "description": "Jelajahi alat bantu pencatatan order dan otomatisasi penagihan yang dirancang untuk kemudahan.",
+        "href": "#features",
+        "subtitle": "Kami tidak membuat fitur ribet. Ingetin dibuat sesimpel mungkin agar kamu bisa langsung pakai tanpa tutorial panjang.",
+        "List": {
+            "tracking": {
+                "title": "Pencatat Order Digital",
+                "description": "Lupakan buku catatan kumal. Data klien dan riwayat order tersimpan rapi, aman, dan mudah dicari selamanya."
+            },
+            "dashboard": {
+                "title": "Dashboard Keuangan",
+                "description": "Sekali lihat langsung paham: berapa omzet bulan ini, mana yang sudah lunas, dan mana yang jatuh tempo hari ini."
+            },
+            "email_reminder": {
+                "title": "Email Reminder Otomatis",
+                "tag": "Fitur Unggulan",
+                "description": "Sistem mengirim email H-3, Hari H, dan saat telat secara otomatis. Bahasa sopan, menggunakan nama usahamu, dan terlihat profesional."
+            }
+        }
+    },
+    "Pricing": {
+        "title": "Investasi Kecil, Cashflow Lancar",
+        "description": "Pilihan paket fleksibel sesuai tahap bisnismu. Transparan, tanpa biaya tersembunyi.",
+        "href": "#pricing",
+        "subtitle": "Satu tagihan cair tepat waktu saja seringkali sudah menutup biaya langganan ini.",
+        "Plans": {
+            "Free": {
+                "name": "Mulai Dulu",
+                "price": "Rp 0",
+                "period": "/ selamanya",
+                "description": "Cocok untuk merapikan catatan order yang berantakan.",
+                "cta": "Daftar Gratis",
+                "features": [
+                    "Catat Order Unlimited",
+                    "Dashboard Ringkas",
+                    "Status Lunas/Belum"
+                ]
+            },
+            "Pro": {
+                "name": "Bisnis Serius",
+                "price": "Rp 29.000",
+                "period": "/ bulan",
+                "description": "Cocok untuk yang lelah menagih manual terus-menerus.",
+                "cta": "Aktifkan Pro",
+                "features": [
+                    "Semua fitur Gratis",
+                    "Kirim Email Tagihan Otomatis",
+                    "Penjadwalan (H-3, H, H+3)",
+                    "Template Email Profesional"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+{
+    "App": {
+        "title": "Ingetin",
+        "description": "Smart payment reminders for SMEs."
+    },
+    "Dashboard": {
+        "title": "Dashboard",
+        "welcome": "Welcome back,"
+    },
+    "Preferences": {
+        "title": "Appearance",
+        "language": "Language",
+        "theme": "Theme"
+    },
+    "LanguageSwitcher": {
+        "label": "Change Language",
+        "current_id": "Indonesian",
+        "current_en": "English"
+    },
+    "ThemeSwitcher": {
+        "label": "Change Theme",
+        "current_light": "Light",
+        "current_dark": "Dark",
+        "current_system": "System",
+        "switch_to_light": "Switch to Light",
+        "switch_to_dark": "Switch to Dark",
+        "switch_to_system": "Switch to System"
+    },
+    "Metadata": {
+        "title": "Ingetin - Get Paid Without the Awkwardness",
+        "description": "Helping freelancers and SMEs track orders and send professional payment reminders automatically."
+    },
+    "Links": {
+        "home": {
+            "label": "Home",
+            "href": "/"
+        },
+        "features": {
+            "label": "Features",
+            "href": "/features"
+        },
+        "pricing": {
+            "label": "Pricing",
+            "href": "/pricing"
+        },
+        "login": {
+            "label": "Login",
+            "href": "/login"
+        },
+        "register": {
+            "label": "Sign Up Free",
+            "href": "/register"
+        }
+    },
+    "Home": {
+        "Introduction": {
+            "label": "Introduction",
+            "title": "Get Paid Without the Awkwardness",
+            "description": "Automated invoice reminders for freelancers and SMEs to secure cash flow without the social friction.",
+            "href": "#introduction",
+            "subtitle": "Track your orders and let our system send polite, professional invoice reminders on auto-pilot. Focus on your craft, and stop chasing payments manually.",
+            "cta_primary": "Try for Free",
+            "cta_primary_href": "/register",
+            "cta_secondary": "How it Works",
+            "cta_secondary_href": "#solution"
+        },
+        "Problem": {
+            "label": "Problem",
+            "title": "Sound Familiar?",
+            "description": "Common pain points that kill productivity and stall business growth.",
+            "href": "#problem",
+            "items": [
+                "Losing track of unpaid orders in endless chat history.",
+                "The anxiety of asking clients for money (again).",
+                "Great sales on paper, but terrible cash flow in reality."
+            ]
+        },
+        "Solution": {
+            "label": "Solution",
+            "title": "Streamline Your Billing in 3 Steps",
+            "description": "A simple workflow to organize orders and automate your follow-ups.",
+            "href": "#solution",
+            "step_1": "1. Log Orders",
+            "step_1_desc": "Quickly input client details and set the due date.",
+            "step_2": "2. Monitor Dashboard",
+            "step_2_desc": "See exactly how much revenue is pending at a glance.",
+            "step_3": "3. Get Paid",
+            "step_3_desc": "We send the polite nudges via email automatically. You just get the notification when the money arrives."
+        }
+    },
+    "Features": {
+        "title": "Simple Features, Big Impact",
+        "description": "Explore our digital tracking and automated billing tools designed for simplicity.",
+        "href": "#features",
+        "subtitle": "We don't do complicated features. Ingetin is built to be intuitive so you can start using it immediately without a manual.",
+        "List": {
+            "tracking": {
+                "title": "Digital Order Tracker",
+                "description": "Ditch the messy notebooks. Client data and order history are stored neatly, securely, and searchable forever."
+            },
+            "dashboard": {
+                "title": "Financial Dashboard",
+                "description": "Understand your numbers at a glance: monthly revenue, paid invoices, and what's due today."
+            },
+            "email_reminder": {
+                "title": "Automated Email Reminders",
+                "tag": "Top Feature",
+                "description": "The system sends emails on T-3, Due Date, and Overdue automatically. Polite, white-labeled with your brand, and professional."
+            }
+        }
+    },
+    "Pricing": {
+        "title": "Small Investment, Smooth Cash Flow",
+        "description": "Flexible plans to fit your business stage. Transparent pricing, no hidden fees.",
+        "href": "#pricing",
+        "subtitle": "Securing just one on-time payment often covers the subscription cost.",
+        "Plans": {
+            "Free": {
+                "name": "Starter",
+                "price": "Rp 0",
+                "period": "/ forever",
+                "description": "Perfect for tidying up your messy order logs.",
+                "cta": "Sign Up Free",
+                "features": [
+                    "Unlimited Order Logging",
+                    "Basic Dashboard",
+                    "Payment Status Tracking"
+                ]
+            },
+            "Pro": {
+                "name": "Pro Business",
+                "price": "Rp 29.000",
+                "period": "/ month",
+                "description": "Perfect for those tired of chasing payments manually.",
+                "cta": "Go Pro",
+                "features": [
+                    "All Free features",
+                    "Automated Email Reminders",
+                    "Smart Scheduling (T-3, Due, Late)",
+                    "Professional Email Templates"
+                ]
+            }
+        }
+    }
+}
