@@ -1,7 +1,8 @@
 {
     "App": {
         "title": "Ingetin",
-        "description": "Sahabat UMKM agar tagihan lancar."
+        "description": "Sahabat UMKM agar tagihan lancar.",
+        "version": "v0.2.0"
     },
     "Dashboard": {
         "title": "Dashboard",
@@ -30,6 +31,9 @@
         "title": "Ingetin - Solusi Tagih Utang Tanpa Sungkan",
         "description": "Bantu UMKM dan freelancer mencatat order dan menagih pembayaran klien secara otomatis dan profesional."
     },
+    "SOT": {
+        "scroll_to_top": "Gulir ke Atas"
+    },
     "Links": {
         "home": {
             "label": "Beranda",
@@ -37,19 +41,19 @@
         },
         "features": {
             "label": "Fitur",
-            "href": "/fitur"
+            "href": "/features"
         },
         "pricing": {
             "label": "Harga",
-            "href": "/harga"
+            "href": "/pricing"
         },
         "login": {
             "label": "Masuk",
-            "href": "/masuk"
+            "href": "/login"
         },
         "register": {
             "label": "Daftar Gratis",
-            "href": "/daftar"
+            "href": "/register"
         }
     },
     "Home": {

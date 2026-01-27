@@ -30,6 +30,9 @@
         "title": "Ingetin - Get Paid Without the Awkwardness",
         "description": "Helping freelancers and SMEs track orders and send professional payment reminders automatically."
     },
+    "SOT": {
+        "scroll_to_top": "Scroll to top"
+    },
     "Links": {
         "home": {
             "label": "Home",

@@ -3,8 +3,10 @@ import ProblemSection from "@/components/shared/section/home/problem";
 import SolutionSection, { StepItem } from "@/components/shared/section/home/solution";
 import { useTranslations } from "next-intl";
 import { ClipboardList, LayoutDashboard, BadgeCheck } from "lucide-react";
+import { MainContainer } from "@/components/shared/section/main";
 
 export default function HomePage() {
+    const app = useTranslations("App");
     const t = useTranslations("Home");
     const links = useTranslations("Links.register");
 
@@ -29,7 +31,7 @@ export default function HomePage() {
     ];
 
     return (
-        <main className="relative flex flex-col w-full overflow-x-hidden">
+        <MainContainer className="relative flex flex-col w-full overflow-x-hidden">
             <HeroSection
                 title={t("Introduction.title")}
                 subtitle={t("Introduction.subtitle")}
@@ -38,6 +40,7 @@ export default function HomePage() {
                 cta_secondary_href={t("Introduction.cta_secondary_href")}
                 hrefSection={t("Introduction.href")}
                 href={links("href")}
+                version={app("version")}
             />
 
             <ProblemSection
@@ -52,6 +55,6 @@ export default function HomePage() {
                 hrefSection={t("Solution.href")}
                 steps={solutionSteps}
             />
-        </main>
+        </MainContainer>
     );
 }

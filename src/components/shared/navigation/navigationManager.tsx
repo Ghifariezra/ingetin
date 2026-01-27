@@ -48,7 +48,7 @@ export function NavigationManager({ navItems }: NavigationManagerType) {
                                 </NavigationMenuTrigger>
 
                                 {/* Dropdown Content Wrapper */}
-                                <NavigationMenuContent>
+                                <NavigationMenuContent className="dark:bg-slate-950 dark:border-slate-800 border border-slate-200 bg-white">
                                     {/* Tambahkan padding (p-4) dan atur background list.
                                       Note: Background utama dropdown biasanya diatur di components/ui/navigation-menu 
                                       tapi kita pastikan listnya rapi disini.

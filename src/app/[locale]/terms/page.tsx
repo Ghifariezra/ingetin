@@ -1,8 +1,8 @@
-import { LegalLayout } from "@/components/shared/section/legal/legal";
+import { LegalSection } from "@/components/shared/section/legal/legal";
 
 export default function TermsPage() {
     return (
-        <LegalLayout
+        <LegalSection
             namespace="Terms"
             variant="blue" 
             sectionKeys={[

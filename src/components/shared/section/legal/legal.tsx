@@ -2,6 +2,8 @@ import { BadgeManager } from "@/components/shared/badge/badge";
 import { useTranslations } from "next-intl";
 import { cn } from "@/_lib/utils";
 import React from "react";
+import { MainContainer } from "@/components/shared/section/main";
+import { ContactManager } from "../../contact/contact";
 
 interface LegalLayoutProps {
     namespace: string; // "Privacy" | "Terms" | "Cookies"
@@ -10,7 +12,7 @@ interface LegalLayoutProps {
     variant?: "blue" | "orange";
 }
 
-export function LegalLayout({
+export function LegalSection({
     namespace,
     sectionKeys,
     icon,
@@ -34,9 +36,9 @@ export function LegalLayout({
     }[variant];
 
     return (
-        <div className="mx-auto max-w-3xl px-6 py-24">
+        <MainContainer className="mx-auto max-w-3xl px-6 py-24">
             {/* --- HEADER --- */}
-            <div className="mb-12 border-b border-slate-200 dark:border-slate-800 pb-8">
+            <section className="mb-12 border-b border-slate-200 dark:border-slate-800 pb-8">
 
                 {/* Icon */}
                 {icon && (
@@ -55,10 +57,10 @@ export function LegalLayout({
                         {currentDate}
                     </BadgeManager>
                 </div>
-            </div>
+            </section>
 
             {/* --- CONTENT --- */}
-            <div className={cn(
+            <section className={cn(
                 "prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold",
                 `prose-a:${theme.link}` // Dynamic link color
             )}>
@@ -89,20 +91,7 @@ export function LegalLayout({
                                 {t(`sections.${key}.title`)}
                             </h3>
 
-                            <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                                {/* Support HTML di content (untuk link email dsb) */}
-                                <span
-                                    className="
-                [&_a]:text-blue-600 
-                [&_a]:font-semibold 
-                [&_a]:underline 
-                [&_a]:underline-offset-4 
-                hover:[&_a]:text-blue-500 
-                dark:[&_a]:text-blue-400
-                transition-colors
-            "
-                                dangerouslySetInnerHTML={{ __html: t.raw(`sections.${key}.content`) }} />
-                            </p>
+                            <ContactManager content={t.raw(`sections.${key}.content`)} />
 
                             {/* Render List jika ada */}
                             {listItems.length > 0 && (
@@ -115,7 +104,7 @@ export function LegalLayout({
                         </div>
                     );
                 })}
-            </div>
-        </div>
+            </section>
+        </MainContainer>
     );
 }

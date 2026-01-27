@@ -1,4 +1,5 @@
 import { cn } from "@/_lib/utils";
+import { PatternProblem } from "@/components/shared/decoration/pattern";
 
 interface ProblemSectionProps {
     title: string;
@@ -27,7 +28,7 @@ export default function ProblemSection({ title, items, hrefSection }: ProblemSec
             className="w-full py-20 lg:py-28 bg-white dark:bg-slate-950 overflow-hidden transition-colors duration-300 relative"
         >
             {/* Dekorasi Background Opsional (Grid Pattern) agar tidak terlalu polos */}
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+            <PatternProblem />
 
             <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-8 relative z-10">
 

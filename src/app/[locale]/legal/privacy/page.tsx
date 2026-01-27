@@ -1,8 +1,8 @@
-import { LegalLayout } from "@/components/shared/section/legal/legal";
+import { LegalSection } from "@/components/shared/section/legal/legal";
 
 export default function PrivacyPage() {
     return (
-        <LegalLayout
+        <LegalSection
             namespace="Privacy"
             variant="blue"
             sectionKeys={["collection", "usage", "security", "contact"]}

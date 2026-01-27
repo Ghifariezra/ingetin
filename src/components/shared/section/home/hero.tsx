@@ -4,6 +4,9 @@ import { ChartNoAxesGantt } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/_lib/utils"; // Pastikan import cn
+import { BadgeManager } from "@/components/shared/badge/badge";
+import { BlobHero } from "@/components/shared/decoration/blob";
+import { PatternHero } from "@/components/shared/decoration/pattern";
 
 export default function HeroSection({
     title,
@@ -13,6 +16,7 @@ export default function HeroSection({
     cta_secondary_href,
     hrefSection,
     href,
+    version,
 }: {
     title: string;
     subtitle: string;
@@ -21,6 +25,7 @@ export default function HeroSection({
     cta_secondary_href: string;
     hrefSection: string;
     href: string;
+    version: string;
 }) {
 
     // Helper untuk menangani logika Highlight Kata
@@ -59,12 +64,7 @@ export default function HeroSection({
             className="relative w-full overflow-hidden py-24 lg:py-32 bg-white dark:bg-slate-950 transition-colors duration-300"
         >
             {/* --- BACKGROUND PATTERN (Modern SaaS Look) --- */}
-            {/* Grid Pattern halus */}
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
-
-            {/* Gradient Light Mode (Top Center) */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(59,130,246,0.1),transparent_50%)] dark:bg-none pointer-events-none" />
-
+            <PatternHero />
 
             <div className="flex justify-center px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 xl:flex xl:justify-between xl:w-full items-center">
@@ -74,9 +74,9 @@ export default function HeroSection({
                         <div className="space-y-6">
 
                             {/* Optional: Small Badge "New Feature" or "v1.0" */}
-                            <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-medium text-blue-800 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
-                                🚀 v1.0 is Live
-                            </div>
+                            <BadgeManager className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-medium text-blue-800 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
+                                {`🚀 ${version} is Live`}
+                            </BadgeManager>
 
                             <h1 className="max-w-3xl text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 sm:text-5xl xl:text-6xl leading-tight">
                                 {renderTitle()}
@@ -122,8 +122,7 @@ export default function HeroSection({
                     {/* --- Right Column: Visual/Image --- */}
                     <div className="relative mx-auto w-full max-w-md lg:max-w-125 xl:max-w-150 lg:ml-auto animate-in fade-in slide-in-from-right-5 duration-1000 delay-200">
                         {/* Decorative blob belakang gambar */}
-                        <div className="absolute -top-12 -right-12 z-0 h-72 w-72 rounded-full bg-blue-400/30 blur-3xl dark:bg-blue-600/20" />
-                        <div className="absolute -bottom-12 -left-12 z-0 h-72 w-72 rounded-full bg-purple-400/30 blur-3xl dark:bg-purple-600/10" />
+                        <BlobHero />
 
                         <div className="h-8 w-full border-b rounded-t-2xl border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 flex items-center px-4 space-x-2">
                             <div className="h-3 w-3 rounded-full bg-red-400" />

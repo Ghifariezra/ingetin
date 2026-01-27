@@ -72,7 +72,7 @@ export default function Footer() {
                                     }>{t("columns.support.docs")}</FooterLink>
                                     <FooterLink href="https://tally.so/r/pbD1vq">{t("columns.support.contact")}</FooterLink>
                                     <FooterLink href="https://tally.so/r/pbD1vq">{t("columns.support.feedback")}</FooterLink>
-                                    <FooterLink href="https://status.ingetin.app">{t("columns.support.api")}</FooterLink>
+                                    <FooterLink href="http://ingetin.instatus.com/">{t("columns.support.api")}</FooterLink>
                                 </ul>
                             </div>
                         </div>
@@ -145,8 +145,6 @@ function SocialLink({ href, icon: Icon, label }: { href: string; icon: LucideIco
     return (
         <Link 
             href={href} 
-            target="_blank" 
-            rel="noopener noreferrer" 
             className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300 transition-colors" 
             aria-label={label}>
             <Icon className="h-5 w-5" aria-hidden="true" />
@@ -159,8 +157,6 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
         <li>
             <Link
                 href={href}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-sm leading-6 text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
                 {children}
             </Link>

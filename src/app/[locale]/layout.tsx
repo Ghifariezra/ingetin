@@ -71,10 +71,12 @@ export default async function LocaleLayout({ children, params }: Props) {
                                 toasterId: "global-toaster",
                             }}
                         />
-                        <CursorProvider>
+                        <CursorProvider >
                             <Cursor
-                                className="text-blue-600 dark:text-blue-400"
+                                className="text-blue-600 dark:text-blue-400 shadow-blue-600/20 dark:shadow-blue-400/20"
+                                lang={locale}
                             />
+
                         </CursorProvider>
                         <QuickAccess />
                         <Footer />
