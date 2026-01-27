@@ -1,6 +1,6 @@
 <div align="center">
 
-  <a href="https://ingetin-one.vercel.app/">
+  <a href="https://ingetin.vercel.app/">
     <img src="public/ui-preview/home/introduction.png" alt="Ingetin Project Banner" width="100%" style="border-radius: 10px;" />
   </a>
 
@@ -11,10 +11,12 @@
   *Get Paid Without the Awkwardness*
 
   <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
-    <a href="https://github.com/username/ingetin">
-      <img src="https://img.shields.io/badge/Version-0.1.0-blue?style=for-the-badge&logo=git&logoColor=white" alt="Version" />
+    <a href="https://github.com/Ghifariezra/ingetin">
+      <img src="https://img.shields.io/badge/Version-0.2.0-blue?style=for-the-badge&logo=git&logoColor=white" alt="Version" />
     </a>
-    <img src="https://img.shields.io/badge/Status-UI%20Preview-orange?style=for-the-badge" alt="Status" />
+    <a href="https://ingetin.vercel.app">
+      <img src="https://img.shields.io/badge/Status-Live_Demo-success?style=for-the-badge" alt="Status" />
+    </a>
     <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
   </div>
 
@@ -28,11 +30,12 @@
 
 Masalah utama yang kami selesaikan adalah **Social Friction**: rasa sungkan, takut dianggap galak, atau sekadar lupa menagih. Dengan Ingetin, pengguna dapat mencatat order, memantau cashflow, dan membiarkan sistem mengirimkan email pengingat tagihan (*Invoice Reminders*) secara otomatis.
 
-> [!NOTE]
-> **🚧 Current Status: v0.1.0 (UI Preview)**
-> Project ini sedang dalam tahap pengembangan aktif.
-> * ✅ **Frontend Ready:** Seluruh antarmuka (UI), Navigasi, Dark Mode, dan i18n sudah berfungsi sempurna.
-<!-- > * 🏗️ **In Progress:** Integrasi Backend (Payment Gateway & Email Scheduler) sedang dikerjakan. -->
+> [!IMPORTANT]
+> **🚀 Current Status: v0.2.0 (Compliance & Docs Update)**
+> Update ini berfokus pada kelengkapan dokumen pendukung (Legalitas & Dokumentasi) serta perbaikan navigasi agar siap digunakan oleh publik.
+> * ✅ **Legal Ready:** Halaman Privacy, Terms, dan Cookies sudah tersedia (Bilingual).
+> * ✅ **Docs Revamp:** Dokumentasi FAQ menggunakan Accordion UI yang responsif.
+> * ✅ **Frontend Complete:** UI/UX, Dark Mode, dan i18n sudah stabil.
 
 ## ✨ Key Features
 
@@ -41,8 +44,9 @@ Masalah utama yang kami selesaikan adalah **Social Friction**: rasa sungkan, tak
 | **Automated Reminders** | 🏗️ | Mengirim email pengingat otomatis (H-3, Hari H, Overdue). |
 | **Multi-language (i18n)** | ✅ | Dukungan penuh Bahasa Indonesia & English via `next-intl`. |
 | **Financial Dashboard** | ✅ | Visualisasi ringkas omzet dan status pembayaran (Lunas/Belum). |
+| **Legal Compliance** | ✅ | Halaman Privacy Policy, Terms of Service, dan Cookie Policy terintegrasi. |
+| **Documentation Center** | ✅ | Halaman FAQ interaktif dengan Accordion UI. |
 | **Dark Mode** | ✅ | Tampilan adaptif yang nyaman di mata. |
-| **Responsive Design** | ✅ | Optimal di Desktop, Tablet, dan Mobile. |
 
 ## 🛠️ Tech Stack
 
@@ -70,6 +74,7 @@ Project ini dibangun di atas ekosistem modern untuk menjamin performa, skalabili
 Kami fokus pada pengalaman visual yang bersih dan modern.
 
 * **Glassmorphism:** Penggunaan efek *backdrop-blur* pada Navbar dan Floating Elements memberikan kesan modern dan depth.
+* **Smart Footer:** Footer navigasi yang terstruktur (Product, Support, Legal) dengan indikator status sistem.
 * **Micro-Interactions:** Interaksi halus saat hover dan klik menggunakan CSS native & Tailwind utilities.
 * **Global Preferences:** Pengguna dapat mengganti Bahasa dan Tema kapan saja melalui *Floating Preferences Button*.
 
@@ -80,29 +85,18 @@ Berikut adalah gambaran arsitektur folder proyek ini:
 ```bash
 ingetin
 ├── src/
-│   ├── app/                 # Next.js App Router (Pages & Layouts)
-│   │   ├── [locale]/        # Route ter-lokalisasi (id/en)
-│   │   └── api/             # API Routes
+│   ├── app/                # Next.js App Router (Pages & Layouts)
+│   │   ├── [locale]/       # Route ter-lokalisasi (id/en)
+│   │   │   ├── (legal)/    # Group Route untuk halaman legal (privacy, terms, cookies)
+│   │   │   └── docs/       # Halaman Dokumentasi
 │   ├── components/
-│   │   ├── animate-ui/      # Custom Animation Components
-│   │   ├── providers/       # Context Providers (Theme, etc)
-│   │   ├── shared/          # Komponen global (Navbar, Sections, Floating)
-│   │   └── ui/              # Shadcn UI primitive components
-│   ├── i18n/                # Konfigurasi next-intl & routing
-│   ├── lib/                 # Utility functions & helpers
-│   ├── messages/            # File translasi JSON (id.json, en.json)
-│   └── _hooks/              # Custom React Hooks
-└── public/                  # Static assets (favicon, manifest, etc)
+│   │   ├── shared/         # Komponen global (Navbar, Footer, LegalLayout)
+│   │   └── ui/             # Shadcn UI primitive components
+│   ├── i18n/               # Konfigurasi next-intl & routing
+│   ├── lib/                # Utility functions & helpers
+│   ├── messages/           # File translasi JSON (id.json, en.json)
+└── public/                 # Static assets (favicon, manifest, etc)
 ```
-
-<!-- ## 🎨 Design System & Custom Components
-
-Beberapa komponen kustom yang menjadi highlight UI Ingetin:
-
-* **`NavigationManager`**: Menu navigasi responsif dengan dukungan deskripsi konten.
-* **`FloatingPreferences`**: Tombol melayang (FAB) dengan efek *glassmorphism* untuk pengaturan Bahasa & Tema.
-* **`ScrollToTopButton`**: Tombol navigasi cepat yang hanya muncul saat user melakukan scroll.
-* **`SolutionSection`**: Layout grid interaktif untuk menampilkan langkah-langkah penggunaan aplikasi. -->
 
 ## 🤝 Contributing
 
