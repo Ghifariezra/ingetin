@@ -16,6 +16,7 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover"
 import { TooltipManager } from "../tooltip/tooltipManager"
+import { Separator } from "@/components/ui/separator"
 
 export interface PickerOption {
     value: string
@@ -59,16 +60,9 @@ export function PopoverPicker({
                         role="combobox"
                         aria-expanded={open}
                         className={cn(
-                            // BASE STYLE: Flex layout
                             "w-full flex justify-between gap-2 px-2 transition-all duration-200",
-
-                            // LIGHT MODE:
                             "text-slate-600 hover:text-blue-600 hover:bg-blue-50",
-
-                            // DARK MODE: 
-                            // Text jadi Slate-300 (silver), Hover jadi Biru Transparan Gelap
                             "dark:text-slate-300 dark:hover:text-blue-400 dark:hover:bg-blue-900/20",
-
                             className
                         )}
                     >
@@ -77,15 +71,15 @@ export function PopoverPicker({
                                 className={cn(
                                     "relative flex items-center justify-center transition-colors",
                                     isCircleIcon
-                                        ? "h-5 w-5 rounded-full border border-slate-200 shadow-sm overflow-hidden dark:border-slate-700" // Flag Style
-                                        : "h-5 w-5" // Icon Style
+                                        ? "h-5 w-5 rounded-full border border-slate-200 shadow-sm overflow-hidden dark:border-slate-700"
+                                        : "h-5 w-5"
                                 )}
                             >
                                 <DisplayIcon className={cn("h-full w-full", isCircleIcon ? "object-cover" : "")} />
                             </div>
                         )}
 
-                        <span className="hidden text-xs font-medium sm:inline-block">
+                        <span className="text-xs font-medium inline-block">
                             {label || activeOption?.label}
                         </span>
                         {open ? (
@@ -97,46 +91,69 @@ export function PopoverPicker({
                 </PopoverTrigger>
             </TooltipManager>
 
-            {/* POPOVER CONTENT */}
-            {/* Border Slate-100 -> Slate-800 di Dark Mode */}
-            <PopoverContent align="end" className="w-37.5 p-0 shadow-lg border-slate-100 dark:border-slate-800 dark:bg-slate-950">
-                <Command>
+            <PopoverContent align="end" className="w-48 p-0 shadow-lg border-slate-100 dark:border-slate-800 dark:bg-slate-950">
+                <Command 
+                    defaultValue={activeValue}
+                    className="bg-slate-50 dark:bg-slate-950">
+                    <div className="px-3 py-2 text-xs font-semibold text-muted-foreground">
+                        {title}
+                    </div>
+                    <Separator />
+
                     <CommandList>
-                        <CommandGroup heading={title}>
-                            {options.map((option) => (
-                                <CommandItem
-                                    key={option.value}
-                                    value={option.value}
-                                    onSelect={() => {
-                                        onSelect(option.value)
-                                        setOpen(false)
-                                    }}
-                                    // Item Hover: Dark mode menggunakan style default CommandItem (biasanya sudah handle dark mode),
-                                    // tapi kita pastikan cursor pointer.
-                                    className="cursor-pointer gap-3 py-2.5"
-                                >
-                                    <div
+                        <CommandGroup className="p-1">
+                            {options.map((option) => {
+                                const isSelected = activeValue === option.value;
+
+                                return (
+                                    <CommandItem
+                                        key={option.value}
+                                        value={option.value}
+                                        onSelect={() => {
+                                            onSelect(option.value)
+                                            setOpen(false)
+                                        }}
                                         className={cn(
-                                            "relative flex items-center justify-center",
-                                            isCircleIcon
-                                                // Border Icon di dalam dropdown
-                                                ? "h-5 w-5 rounded-full border border-slate-100 overflow-hidden dark:border-slate-700"
-                                                : "h-4 w-4"
+                                            "cursor-pointer gap-3 py-2.5 rounded-sm px-2 mb-1",
+
+                                            // 1. Matikan gaya hover/fokus bawaan agar tidak bertumpuk
+                                            "aria-selected:bg-transparent data-[selected=true]:bg-transparent",
+
+                                            // 2. Terapkan logika gaya kustom
+                                            isSelected
+                                                ? // Jika DIPILIH (Active):
+                                                // - Background selalu biru (baik saat diam maupun saat di-hover/fokus)
+                                                // - Teks biru
+                                                "bg-blue-50 dark:bg-blue-900/20 data-[selected=true]:bg-blue-50 dark:data-[selected=true]:bg-blue-900/20 text-blue-700 dark:text-blue-400"
+
+                                                : // Jika TIDAK DIPILIH:
+                                                // - Background transparan saat diam
+                                                // - Background abu-abu HANYA saat di-hover/fokus (data-selected=true)
+                                                // - Teks abu-abu
+                                                "data-[selected=true]:bg-slate-100 dark:data-[selected=true]:bg-slate-800 text-slate-600 dark:text-slate-400"
                                         )}
                                     >
-                                        <option.icon className={cn("h-full w-full", isCircleIcon ? "object-cover" : "")} />
-                                    </div>
+                                        <div
+                                            className={cn(
+                                                "relative flex items-center justify-center",
+                                                isCircleIcon
+                                                    ? "h-5 w-5 rounded-full border border-slate-100 overflow-hidden dark:border-slate-700"
+                                                    : "h-4 w-4"
+                                            )}
+                                        >
+                                            <option.icon className={cn("h-full w-full", isCircleIcon ? "object-cover" : "")} />
+                                        </div>
 
-                                    <span className="flex-1 text-sm font-medium leading-none">
-                                        {option.label}
-                                    </span>
+                                        <span className="flex-1 text-sm font-medium leading-none">
+                                            {option.label}
+                                        </span>
 
-                                    {activeValue === option.value && (
-                                        // Check Icon: Blue-600 -> Blue-500 di Dark Mode
-                                        <Check className="h-4 w-4 text-blue-600 dark:text-blue-500" />
-                                    )}
-                                </CommandItem>
-                            ))}
+                                        {isSelected && (
+                                            <Check className="h-4 w-4 text-blue-600 dark:text-blue-500" />
+                                        )}
+                                    </CommandItem>
+                                )
+                            })}
                         </CommandGroup>
                     </CommandList>
                 </Command>

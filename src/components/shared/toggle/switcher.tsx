@@ -21,12 +21,12 @@ export function Switcher() {
 
                         // LIGHT MODE:
                         // Text abu-abu, Hover jadi Biru & Background Biru tipis
-                        "text-slate-600 hover:text-blue-600 hover:bg-blue-50",
+                        "text-slate-600 hover:text-blue-600 hover:bg-slate-50",
 
                         // DARK MODE IMPROVEMENT:
                         // Text Silver (Slate-300), Hover jadi Biru Muda (Blue-400)
                         // Background hover jadi transparan biru gelap
-                        "dark:text-slate-300 dark:hover:text-blue-400 dark:hover:bg-blue-900/20 group"
+                        "dark:text-slate-300 dark:hover:text-blue-400 dark:hover:bg-slate-950/20 group"
                     )}>
                         <Settings
                             // ANIMASI GEAR:

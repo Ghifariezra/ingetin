@@ -12,6 +12,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Cursor, CursorProvider } from "@/components/animate-ui/components/animate/cursor";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { QuickAccess } from "@/components/shared/floating/quckAccess";
+import Footer from "@/components/shared/footer/footer";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -76,6 +77,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                             />
                         </CursorProvider>
                         <QuickAccess />
+                        <Footer />
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>

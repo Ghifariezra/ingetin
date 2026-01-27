@@ -2,9 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
-import { NavigationManager } from "../navigation/navigationManager";
+import { NavigationManager } from "@/components/shared/navigation/navigationManager";
+import { Logo } from "@/components/shared/logo/logo";
 
 export default function Navbar() {
     const t = useTranslations("App");
@@ -59,26 +59,7 @@ export default function Navbar() {
             <div className="mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
 
                 {/* --- Logo Section --- */}
-                <div className="flex items-center gap-2 select-none">
-                    <Image
-                        src="/chat.png"
-                        alt="Logo"
-                        width={28}
-                        height={28}
-                        // Logo: Brightness naik sedikit di dark mode agar lebih pop
-                        className="opacity-90 hover:opacity-100 transition-all dark:brightness-110"
-                    />
-                    <Link
-                        href="/"
-                        // Text Logo: Slate-900 -> Slate-50 (Putih)
-                        // Hover: Blue-600 -> Blue-500 (Lebih terang dikit di dark mode)
-                        className="text-xl font-bold tracking-tight text-slate-900 transition-colors 
-                            hover:text-blue-600 
-                            dark:text-slate-50 dark:hover:text-blue-500"
-                    >
-                        {t("title").toLowerCase()}
-                    </Link>
-                </div>
+                <Logo title={t("title")} />
 
                 {/* --- Center Navigation --- */}
                 {/* <ul className="hidden md:flex items-center gap-8 select-none">

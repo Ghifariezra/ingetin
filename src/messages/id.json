@@ -141,5 +141,166 @@
                 ]
             }
         }
+    },
+    "Footer": {
+        "title": "Ingetin",
+        "branding": {
+            "description": "Nagih klien tanpa rasa 'Ga Enakan'. Platform invoice reminder otomatis untuk Freelancer Indonesia."
+        },
+        "social": {
+            "github": "GitHub",
+            "twitter": "Twitter / X",
+            "linkedin": "LinkedIn",
+            "instagram": "Instagram"
+        },
+        "columns": {
+            "product": {
+                "title": "Produk",
+                "features": "Fitur",
+                "pricing": "Harga",
+                "roadmap": "Peta Jalan (Roadmap)",
+                "changelog": "Catatan Perubahan"
+            },
+            "support": {
+                "title": "Bantuan",
+                "docs": "Dokumentasi",
+                "contact": "Hubungi Kami",
+                "api": "Status API",
+                "feedback": "Kirim Masukan"
+            },
+            "legal": {
+                "title": "Legal",
+                "privacy": "Kebijakan Privasi",
+                "terms": "Syarat & Ketentuan",
+                "cookies": "Kebijakan Cookie"
+            },
+            "status": {
+                "title": "Status Sistem",
+                "system_normal": "Semua sistem normal"
+            }
+        },
+        "copyright": {
+            "text": "Ingetin. Dibuat dengan ❤️ di Indonesia."
+        },
+        "language_label": "Bahasa Indonesia (ID)"
+    },
+    "Docs": {
+        "title": "Dokumentasi & FAQ",
+        "subtitle": "Jawaban cepat untuk pertanyaan yang sering diajukan tentang Ingetin.",
+        "faq": {
+            "item_1": {
+                "question": "Apa itu Ingetin?",
+                "answer": "Ingetin adalah asisten penagihan otomatis. Kami membantu mencatat piutang klien dan mengirimkan email pengingat secara otomatis saat jatuh tempo, agar Anda tidak perlu menagih secara manual."
+            },
+            "item_2": {
+                "question": "Apakah ini Gratis?",
+                "answer": "Ya! Kami menyediakan paket 'Starter' yang gratis selamanya untuk mencatat order tanpa batas. Fitur pengiriman email otomatis tersedia di paket Pro."
+            },
+            "item_3": {
+                "question": "Bagaimana cara kerja Reminder Otomatis?",
+                "answer": "Setelah Anda mengaktifkan fitur Pro, sistem akan mendeteksi tanggal jatuh tempo invoice. Kami akan mengirim email sopan atas nama Anda pada H-3 (3 hari sebelum), Hari H, dan H+3 (jika belum lunas)."
+            },
+            "item_4": {
+                "question": "Apakah data keuangan saya aman?",
+                "answer": "Sangat aman. Kami menggunakan enkripsi standar industri. Kami tidak akan pernah menjual data klien atau data transaksi Anda ke pihak ketiga manapun."
+            },
+            "item_5": {
+                "question": "Saya butuh bantuan lebih lanjut",
+                "answer": "Jika ada kendala teknis, silakan hubungi kami melalui email di support@ingetin.app atau melalui formulir Feedback di footer."
+            }
+        },
+        "content": "Jika Anda memiliki pertanyaan, silakan hubungi kami di <a href='mailto:support@ingetin.app'>support@ingetin.app</a>."
+    },
+    "Privacy": {
+        "title": "Kebijakan Privasi",
+        "last_updated": "Terakhir diperbarui:",
+        "intro": "Di <strong>Ingetin</strong>, privasi Anda adalah prioritas kami. Kebijakan ini menjelaskan bagaimana kami mengelola data Anda.",
+        "sections": {
+            "collection": {
+                "title": "1. Data yang Kami Kumpulkan",
+                "content": "Kami hanya mengumpulkan data yang diperlukan untuk fungsi aplikasi, yaitu: Nama, Alamat Email, dan Data Transaksi (Invoice) yang Anda masukkan secara sukarela."
+            },
+            "usage": {
+                "title": "2. Penggunaan Data",
+                "content": "Data Anda digunakan semata-mata untuk:",
+                "list": [
+                    "Menyediakan layanan pencatatan invoice.",
+                    "Mengirimkan notifikasi email pengingat (Reminder).",
+                    "Meningkatkan kualitas layanan kami."
+                ]
+            },
+            "security": {
+                "title": "3. Keamanan Data",
+                "content": "Kami tidak menjual, memperdagangkan, atau menyewakan informasi identitas pribadi pengguna kepada orang lain. Data Anda tersimpan aman di server kami."
+            },
+            "contact": {
+                "title": "4. Hubungi Kami",
+                "content": "Jika Anda memiliki pertanyaan tentang kebijakan ini, silakan hubungi kami di"
+            }
+        }
+    },
+    "Terms": {
+        "title": "Syarat & Ketentuan",
+        "last_updated": "Terakhir diperbarui:",
+        "intro": "Dengan mengakses atau menggunakan <strong>Ingetin</strong>, Anda setuju untuk terikat oleh syarat-syarat ini. Jika Anda tidak setuju dengan bagian mana pun, Anda tidak diperbolehkan menggunakan layanan kami.",
+        "sections": {
+            "account": {
+                "title": "1. Ketentuan Akun",
+                "content": "Untuk mengakses fitur tertentu, Anda wajib mendaftar akun. Anda setuju untuk memberikan informasi yang akurat dan menjaga keamanan kata sandi Anda. Anda bertanggung jawab penuh atas aktivitas di akun Anda."
+            },
+            "usage": {
+                "title": "2. Penggunaan yang Diperbolehkan",
+                "content": "Anda setuju untuk tidak menyalahgunakan Layanan. Tindakan yang dilarang meliputi:",
+                "list": [
+                    "Mengirim spam atau pesan yang mengganggu melalui sistem pengingat kami.",
+                    "Menggunakan layanan untuk aktivitas ilegal atau penipuan.",
+                    "Mencoba meretas atau mengganggu server kami."
+                ]
+            },
+            "payment": {
+                "title": "3. Pembayaran & Berlangganan",
+                "content": "Beberapa fitur berbayar. Biaya tidak dapat dikembalikan kecuali diwajibkan oleh hukum. Kami berhak mengubah harga dengan pemberitahuan sebelumnya."
+            },
+            "termination": {
+                "title": "4. Penghentian Layanan",
+                "content": "Kami dapat menangguhkan atau menghentikan akun Anda segera, tanpa pemberitahuan sebelumnya, atas alasan apa pun, termasuk jika Anda melanggar Syarat & Ketentuan ini."
+            },
+            "limitation": {
+                "title": "5. Batasan Tanggung Jawab",
+                "content": "Ingetin tidak bertanggung jawab atas kerugian tidak langsung, insidental, atau konsekuensial yang diakibatkan oleh penggunaan layanan ini."
+            },
+            "contact": {
+                "title": "6. Hubungi Kami",
+                "content": "Jika Anda memiliki pertanyaan, silakan hubungi kami di <a href='mailto:support@ingetin.app'>support@ingetin.app</a>."
+            }
+        }
+    },
+    "Cookies": {
+        "title": "Kebijakan Cookie",
+        "last_updated": "Terakhir diperbarui:",
+        "intro": "Kebijakan ini menjelaskan bagaimana <strong>Ingetin</strong> menggunakan cookie dan teknologi serupa untuk mengenali Anda saat mengunjungi situs web kami.",
+        "sections": {
+            "what_are_cookies": {
+                "title": "1. Apa itu Cookie?",
+                "content": "Cookie adalah file data kecil yang ditempatkan di komputer atau perangkat seluler Anda saat mengunjungi situs web. Cookie digunakan secara luas agar situs web bekerja lebih efisien dan memberikan informasi pelaporan."
+            },
+            "why_we_use": {
+                "title": "2. Mengapa Kami Menggunakan Cookie",
+                "content": "Kami menggunakan cookie untuk beberapa alasan:",
+                "list": [
+                    "Untuk membuat Anda tetap masuk (Cookie Sesi).",
+                    "Untuk mengingat preferensi Anda seperti bahasa dan tema.",
+                    "Untuk memahami bagaimana Anda menggunakan situs kami agar kami dapat meningkatkannya (Analitik)."
+                ]
+            },
+            "control": {
+                "title": "3. Cara Mengontrol Cookie",
+                "content": "Anda memiliki hak untuk memutuskan apakah akan menerima atau menolak cookie. Anda dapat mengatur atau mengubah kontrol browser web Anda untuk menerima atau menolak cookie."
+            },
+            "updates": {
+                "title": "4. Pembaruan Kebijakan Ini",
+                "content": "Kami dapat memperbarui Kebijakan Cookie ini dari waktu ke waktu untuk mencerminkan, misalnya, perubahan pada cookie yang kami gunakan atau untuk alasan operasional, hukum, atau peraturan lainnya."
+            }
+        }
     }
 }
