@@ -2,7 +2,7 @@
     "App": {
         "title": "Ingetin",
         "description": "Sahabat UMKM agar tagihan lancar.",
-        "version": "v0.2.0"
+        "version": "v0.4.0"
     },
     "Dashboard": {
         "title": "Dashboard",
@@ -305,6 +305,85 @@
                 "title": "4. Pembaruan Kebijakan Ini",
                 "content": "Kami dapat memperbarui Kebijakan Cookie ini dari waktu ke waktu untuk mencerminkan, misalnya, perubahan pada cookie yang kami gunakan atau untuk alasan operasional, hukum, atau peraturan lainnya."
             }
+        }
+    },
+    "Register": {
+        "title": "Daftar Akun",
+        "description": "Mulai kelola tagihan klien dengan lebih mudah",
+        "social": {
+            "google": "Daftar dengan Google",
+            "divider": "Atau dengan email"
+        },
+        "form": {
+            "name": {
+                "label": "Nama Lengkap",
+                "placeholder": "Contoh: Budi Santoso"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "nama@perusahaan.com"
+            },
+            "password": {
+                "label": "Kata Sandi",
+                "placeholder": "******",
+                "show": "Tampilkan sandi",
+                "hide": "Sembunyikan sandi"
+            }
+        },
+        "buttons": {
+            "submit": "Buat Akun",
+            "submitting": "Memproses..."
+        },
+        "footer": {
+            "text": "Sudah punya akun?",
+            "link": "Masuk di sini"
+        },
+        "validation": {
+            "name_min": "Nama minimal 2 karakter.",
+            "email_invalid": "Harap masukkan email yang valid.",
+            "password_min": "Password minimal 8 karakter.",
+            "password_uppercase": "Harus ada minimal 1 huruf besar.",
+            "password_number": "Harus ada minimal 1 angka."
+        },
+        "alerts": {
+            "success": "Registrasi Berhasil! Cek console untuk data."
+        }
+    },
+    "Login": {
+        "title": "Selamat Datang Kembali",
+        "description": "Masuk untuk mengelola tagihan Anda",
+        "social": {
+            "google": "Masuk dengan Google",
+            "divider": "Atau masuk dengan email"
+        },
+        "form": {
+            "email": {
+                "label": "Email",
+                "placeholder": "nama@perusahaan.com"
+            },
+            "password": {
+                "label": "Kata Sandi",
+                "placeholder": "******",
+                "show": "Tampilkan sandi",
+                "hide": "Sembunyikan sandi",
+                "forgot": "Lupa kata sandi?"
+            }
+        },
+        "buttons": {
+            "submit": "Masuk",
+            "submitting": "Memproses..."
+        },
+        "footer": {
+            "text": "Belum punya akun?",
+            "link": "Daftar sekarang"
+        },
+        "validation": {
+            "email_required": "Email wajib diisi.",
+            "email_invalid": "Format email tidak valid.",
+            "password_required": "Kata sandi wajib diisi."
+        },
+        "alerts": {
+            "success": "Login Berhasil! Mengalihkan..."
         }
     }
 }

@@ -20,6 +20,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
+import { usePathname } from "@/i18n/navigation";
 
 // Definisi Tipe Data (Agar bisa dipassing ke Mobile Menu)
 type NavItemContent = {
@@ -38,6 +39,12 @@ export default function Navbar() {
     const t = useTranslations("App");
     const navigation = useTranslations("Home");
     const links = useTranslations("Links");
+    const pathName = usePathname();
+
+    if (pathName.split('/')[1] === 'auth') {
+        return;
+    }
+
 
     // --- SETUP DATA NAVIGATION ---
     const linksItem = [
@@ -78,7 +85,7 @@ export default function Navbar() {
     });
 
     return (
-        <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md transition-colors duration-300 dark:bg-slate-950/80 dark:border-slate-800">
+        <nav id="navbar" className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md transition-colors duration-300 dark:bg-slate-950/80 dark:border-slate-800">
             <div className="mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-6">
 
                 {/* 1. LOGO */}

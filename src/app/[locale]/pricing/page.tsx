@@ -85,7 +85,7 @@ export default function PricingPage() {
 
                             {/* CTA Button */}
                             <Link
-                                href={isPro ? "/register?plan=pro" : "/register?plan=free"}
+                                href={isPro ? "/auth/register?plan=pro" : "/auth/register?plan=free"}
                                 className={cn(
                                     "mt-auto block w-full rounded-2xl px-6 py-4 text-center text-base font-bold shadow-sm transition-all duration-300 transform active:scale-95",
                                     isPro

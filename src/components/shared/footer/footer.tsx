@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import {
     Github,
@@ -9,14 +11,20 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Logo } from "@/components/shared/logo/logo";
+import { usePathname } from "next/dist/client/components/navigation";
 
 export default function Footer() {
     const t = useTranslations("Footer");
     const links = useTranslations("Links");
     const currentYear = new Date().getFullYear();
+    const pathName = usePathname();
+
+    if (pathName.split('/')[1] === 'auth') {
+        return;
+    }
 
     return (
-        <footer className="w-full border-t border-slate-200 bg-white dark:bg-slate-950 dark:border-slate-800 transition-colors duration-300">
+        <footer id="footer" className="w-full border-t border-slate-200 bg-white dark:bg-slate-950 dark:border-slate-800 transition-colors duration-300">
             <div className="flex flex-col items-center px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8 w-full">
                     {/* --- KOLOM 1: BRANDING --- */}

@@ -1,3 +1,5 @@
+'use client';
+
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { ChartNoAxesGantt } from "lucide-react";
@@ -88,6 +90,7 @@ export default function HeroSection({
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+
                             {/* CTA PRIMARY */}
                             <Button
                                 asChild

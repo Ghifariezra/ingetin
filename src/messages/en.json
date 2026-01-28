@@ -1,7 +1,8 @@
 {
     "App": {
         "title": "Ingetin",
-        "description": "Smart payment reminders for SMEs."
+        "description": "Smart payment reminders for SMEs.",
+        "version": "v0.4.0"
     },
     "Dashboard": {
         "title": "Dashboard",
@@ -48,11 +49,11 @@
         },
         "login": {
             "label": "Login",
-            "href": "/login"
+            "href": "/auth/login"
         },
         "register": {
             "label": "Sign Up Free",
-            "href": "/register"
+            "href": "/auth/register"
         }
     },
     "Home": {
@@ -304,6 +305,85 @@
                 "title": "4. Updates to this Policy",
                 "content": "We may update this Cookie Policy from time to time to reflect, for example, changes to the cookies we use or for other operational, legal, or regulatory reasons."
             }
+        }
+    },
+    "Register": {
+        "title": "Create an Account",
+        "description": "Start managing client invoices with ease",
+        "social": {
+            "google": "Sign up with Google",
+            "divider": "Or continue with email"
+        },
+        "form": {
+            "name": {
+                "label": "Full Name",
+                "placeholder": "Example: John Doe"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "name@company.com"
+            },
+            "password": {
+                "label": "Password",
+                "placeholder": "******",
+                "show": "Show password",
+                "hide": "Hide password"
+            }
+        },
+        "buttons": {
+            "submit": "Create Account",
+            "submitting": "Processing..."
+        },
+        "footer": {
+            "text": "Already have an account?",
+            "link": "Sign in here"
+        },
+        "validation": {
+            "name_min": "Name must be at least 2 characters.",
+            "email_invalid": "Please enter a valid email address.",
+            "password_min": "Password must be at least 8 characters.",
+            "password_uppercase": "Must contain at least 1 uppercase letter.",
+            "password_number": "Must contain at least 1 number."
+        },
+        "alerts": {
+            "success": "Registration Successful! Check console for data."
+        }
+    },
+    "Login": {
+        "title": "Welcome Back",
+        "description": "Sign in to manage your invoices",
+        "social": {
+            "google": "Sign in with Google",
+            "divider": "Or sign in with email"
+        },
+        "form": {
+            "email": {
+                "label": "Email",
+                "placeholder": "name@company.com"
+            },
+            "password": {
+                "label": "Password",
+                "placeholder": "******",
+                "show": "Show password",
+                "hide": "Hide password",
+                "forgot": "Forgot password?"
+            }
+        },
+        "buttons": {
+            "submit": "Sign In",
+            "submitting": "Signing in..."
+        },
+        "footer": {
+            "text": "Don't have an account?",
+            "link": "Register now"
+        },
+        "validation": {
+            "email_required": "Email is required.",
+            "email_invalid": "Invalid email address.",
+            "password_required": "Password is required."
+        },
+        "alerts": {
+            "success": "Login Successful! Redirecting..."
         }
     }
 }
