@@ -49,11 +49,11 @@
         },
         "login": {
             "label": "Masuk",
-            "href": "/login"
+            "href": "/auth/login"
         },
         "register": {
             "label": "Daftar Gratis",
-            "href": "/register"
+            "href": "/auth/register"
         }
     },
     "Home": {
