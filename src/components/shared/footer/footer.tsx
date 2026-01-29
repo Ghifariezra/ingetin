@@ -19,7 +19,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
     const pathName = usePathname();
 
-    if (pathName.split('/')[1] === 'auth') {
+    if (pathName?.split('/')[1] === 'auth') {
         return;
     }
 

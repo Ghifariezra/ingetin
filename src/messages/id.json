@@ -2,7 +2,7 @@
     "App": {
         "title": "Ingetin",
         "description": "Sahabat UMKM agar tagihan lancar.",
-        "version": "v0.4.0"
+        "version": "v0.5.0"
     },
     "Dashboard": {
         "title": "Dashboard",
@@ -346,7 +346,11 @@
             "password_number": "Harus ada minimal 1 angka."
         },
         "alerts": {
-            "success": "Registrasi Berhasil! Cek console untuk data."
+            "success": "Registrasi Berhasil!"
+        },
+        "toast": {
+            "captcha_required": "Mohon selesaikan verifikasi Captcha terlebih dahulu.",
+            "error_generic": "Terjadi kesalahan. Silakan coba lagi nanti."
         }
     },
     "Login": {

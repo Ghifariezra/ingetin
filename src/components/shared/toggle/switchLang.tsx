@@ -1,7 +1,7 @@
 "use client"
 
 import { useTranslations } from "next-intl"
-import { useLanguageSwitcher } from "@/_hooks/toggle/lang"
+import { useLanguageSwitcher } from "@/_hooks/toggle/useLang"
 import { PopoverPicker, PickerOption } from "@/components/shared/popover/popoverPicker"
 import { FlagID, FlagUS } from "@/components/shared/svg/flags"
 

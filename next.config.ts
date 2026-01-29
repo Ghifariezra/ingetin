@@ -11,6 +11,9 @@ const nextConfig = {
         reactRemoveProperties: true,
     },
     poweredByHeader: false,
+    experimental: {
+        globalNotFound: true,
+    },
 };
 
 export default withNextIntl(nextConfig);
