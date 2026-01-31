@@ -8,6 +8,12 @@ export const createRegisterSchema = (t: (arg: string) => string) => z.object({
         .min(8, { message: t("validation.password_min") })
         .regex(/[A-Z]/, { message: t("validation.password_uppercase") })
         .regex(/[0-9]/, { message: t("validation.password_number") }),
+
+    // ✅ SOLUSI: Gunakan z.boolean().refine()
+    // Ini memastikan tipe datanya boolean, dan nilainya harus true.
+    terms: z.boolean().refine((val) => val === true, {
+        message: t("validation.terms_required"),
+    }),
 });
 
 export type RegisterValues = z.infer<ReturnType<typeof createRegisterSchema>>;

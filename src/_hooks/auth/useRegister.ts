@@ -23,7 +23,12 @@ export const useRegister = () => {
 
     const form = useForm<RegisterValues>({
         resolver: zodResolver(RegisterSchema),
-        defaultValues: { name: "", email: "", password: "" },
+        defaultValues: { 
+            name: "", 
+            email: "", 
+            password: "", 
+            terms: false
+         },
         mode: "onChange",
     });
 
@@ -41,6 +46,12 @@ export const useRegister = () => {
             return;
         }
 
+        if (!data.terms) {
+            toast.error(t("validation.terms_required"));
+            setIsLoading(false);
+            return;
+        }
+
         try {
             // 2. Call Supabase SignUp
             const { error } = await supabase.auth.signUp({
@@ -49,6 +60,7 @@ export const useRegister = () => {
                 options: {
                     data: {
                         full_name: data.name,
+                        terms: data.terms
                     },
                     captchaToken: captchaToken,
                 },

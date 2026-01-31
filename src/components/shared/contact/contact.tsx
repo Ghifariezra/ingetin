@@ -1,3 +1,4 @@
+
 export function ContactManager({ content }: { content: unknown }) {
     return (
         <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">

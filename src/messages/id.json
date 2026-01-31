@@ -402,7 +402,8 @@
             "email_invalid": "Harap masukkan email yang valid.",
             "password_min": "Password minimal 8 karakter.",
             "password_uppercase": "Harus ada minimal 1 huruf besar.",
-            "password_number": "Harus ada minimal 1 angka."
+            "password_number": "Harus ada minimal 1 angka.",
+            "terms_required": "Anda harus menyetujui Syarat & Ketentuan."
         },
         "alerts": {
             "success": "Registrasi Berhasil!"

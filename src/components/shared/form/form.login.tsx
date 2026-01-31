@@ -178,12 +178,16 @@ export default function LoginForm() {
                             />
 
                             {/* --- CAPTCHA INTEGRATION --- */}
-                            <RecaptchaField
-                                ref={recaptchaRef}
-                                isVisible={true} // Selalu tampilkan di login, atau bisa pakai form.formState.isDirty
-                                onChange={onCaptchaChange}
-                                theme={currentTheme as "light" | "dark"}
-                            />
+                            {
+                                form.formState.isValidating || form.formState.isValid ? (
+                                    <RecaptchaField
+                                        ref={recaptchaRef}
+                                        isVisible={true} // Selalu tampilkan di login, atau bisa pakai form.formState.isDirty
+                                        onChange={onCaptchaChange}
+                                        theme={currentTheme as "light" | "dark"}
+                                    />
+                                ) : null
+                            }
 
                             <Button
                                 type={process.env.NEXT_PUBLIC_ENABLE_2FA === 'true' ? "button" : "submit"}

@@ -20,6 +20,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { RecaptchaField } from "@/components/shared/form/recaptcha/recaptcha"; // Pastikan path sesuai
 import { toast } from "sonner";
+import { Checkbox } from "@/components/ui/checkbox";
+import { ContactManager } from "../contact/contact";
 
 export default function RegisterForm() {
     const {
@@ -158,14 +160,44 @@ export default function RegisterForm() {
                             />
 
                             {/* CAPTCHA Field */}
-                            {/* Pastikan menggunakan komponen RecaptchaField yang sudah di-forwardRef */}
-                            <RecaptchaField
-                                ref={recaptchaRef}
-                                isVisible={form.formState.isValid}
-                                onChange={onCaptchaChange}
-                                theme={currentTheme as "light" | "dark"}
+                            {
+                                form.formState.isValidating || form.formState.isValid ? (
+                                    <RecaptchaField
+                                        ref={recaptchaRef}
+                                        isVisible={true} // Selalu tampilkan di login, atau bisa pakai form.formState.isDirty
+                                        onChange={onCaptchaChange}
+                                        theme={currentTheme as "light" | "dark"}
+                                    />
+                                ) : null
+                            }
+
+                            
+                            {/* Terms Field */}
+                            <FormField
+                                control={form.control}
+                                name="terms"
+                                render={({ field }) => (
+                                    <FormItem className="flex flex-row items-center space-x-2">
+                                        <FormControl>
+                                            <Checkbox
+                                                disabled={isLoading}
+                                                checked={field.value}
+                                                onCheckedChange={field.onChange}
+                                            />
+                                        </FormControl>
+                                        <div className="flex flex-col gap-0">
+                                            <FormLabel className="text-sm text-slate-700 dark:text-slate-300">
+                                                <ContactManager
+                                                    content={t.raw("checkbox_terms")}
+                                                />
+                                            </FormLabel>
+                                            <FormMessage className="text-xs" />
+                                        </div>
+                                    </FormItem>
+                                )}
                             />
 
+                            {/* Submit Button */}
                             <Button
                                 type={process.env.NEXT_PUBLIC_ENABLE_2FA === 'true' ? "button" : "submit"}
                                 className="w-full h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all hover:-translate-y-0.5 mt-2 font-semibold text-base"
