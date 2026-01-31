@@ -5,7 +5,7 @@ export function FeaturesHero() {
 
     return (
         <section className="relative pt-24 pb-12 sm:pt-32 sm:pb-20 px-6 lg:px-8 z-10">
-            <div className="mx-auto max-w-3xl text-center">
+            <div className="w-full text-center">
                 <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium text-blue-600 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-300 mb-6 border border-blue-100 dark:border-blue-800">
                     ✨ {t("subtitle")}
                 </div>

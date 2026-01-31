@@ -1,6 +1,6 @@
 {
   "name": "ingetin",
-  "version": "0.5.1",
+  "version": "v0.6.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
