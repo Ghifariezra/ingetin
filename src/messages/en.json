@@ -2,7 +2,7 @@
     "App": {
         "title": "Ingetin",
         "description": "Smart payment reminders for SMEs.",
-        "version": "v0.5.0"
+        "version": "v0.5.1"
     },
     "Dashboard": {
         "title": "Dashboard",
@@ -60,23 +60,43 @@
         "Introduction": {
             "label": "Introduction",
             "title": "Get Paid Without the Awkwardness",
-            "description": "Automated invoice reminders for freelancers and SMEs to secure cash flow without the social friction.",
+            "description": "Ingetin helps freelancers and small businesses send automated, polite invoice reminders — so you get paid on time.",
             "href": "#introduction",
-            "subtitle": "Track your orders and let our system send polite, professional invoice reminders on auto-pilot. Focus on your craft, and stop chasing payments manually.",
+            "subtitle": "Log your orders once and let our system follow up professionally. Focus on your work, not chasing payments.",
             "cta_primary": "Try for Free",
             "cta_primary_href": "/register",
-            "cta_secondary": "How it Works",
+            "cta_secondary": "See How It Works",
             "cta_secondary_href": "#solution"
         },
         "Problem": {
             "label": "Problem",
-            "title": "Sound Familiar?",
-            "description": "Common pain points that kill productivity and stall business growth.",
+            "title": "Does This Sound Familiar?",
+            "description": "Small issues that quietly hurt productivity and cash flow.",
             "href": "#problem",
             "items": [
-                "Losing track of unpaid orders in endless chat history.",
-                "The anxiety of asking clients for money (again).",
-                "Great sales on paper, but terrible cash flow in reality."
+                "Unpaid invoices buried in endless chat threads.",
+                "Feeling awkward reminding clients about payments.",
+                "Healthy sales numbers, but cash is always late."
+            ]
+        },
+        "TargetUsers": {
+            "label": "For You",
+            "title": "Built for Independent Professionals",
+            "description": "Ingetin is designed for people who rely on timely payments to keep their business running.",
+            "href": "#target-users",
+            "items": [
+                {
+                    "title": "Freelancers",
+                    "desc": "Designers, developers, writers, and consultants who invoice clients regularly."
+                },
+                {
+                    "title": "Small Businesses",
+                    "desc": "Agencies and studios managing multiple client payments."
+                },
+                {
+                    "title": "Side Hustlers",
+                    "desc": "Professionals running projects alongside a full-time job."
+                }
             ]
         },
         "Solution": {
@@ -110,6 +130,12 @@
                 "title": "Automated Email Reminders",
                 "tag": "Top Feature",
                 "description": "The system sends emails on T-3, Due Date, and Overdue automatically. Polite, white-labeled with your brand, and professional."
+            },
+            "whatsapp_reminder": {
+                "title": "Automated WhatsApp Reminders",
+                "tag": "Premium",
+                "description": "Send payment reminders directly to your clients’ WhatsApp. Faster to read, polite in tone, and no more awkward follow-ups.",
+                "note": "Recommended only for clients who have previously interacted with you."
             }
         }
     },
@@ -118,6 +144,10 @@
         "description": "Flexible plans to fit your business stage. Transparent pricing, no hidden fees.",
         "href": "#pricing",
         "subtitle": "Securing just one on-time payment often covers the subscription cost.",
+        "WhatsAppSafety": {
+            "title": "Safe & Responsible Usage",
+            "content": "WhatsApp reminders are intended for transactional notifications to existing clients, not for bulk promotions."
+        },
         "Plans": {
             "Free": {
                 "name": "Starter",
@@ -141,8 +171,27 @@
                     "All Free features",
                     "Automated Email Reminders",
                     "Smart Scheduling (T-3, Due, Late)",
-                    "Professional Email Templates"
+                    "Professional Email Templates",
+                    "Email Delivery Reports"
                 ]
+            },
+            "Business": {
+                "name": "Most Popular",
+                "badge": "Bundle",
+                "price": "Rp 59.000",
+                "period": "/ month",
+                "description": "For businesses that want invoices seen and paid faster.",
+                "cta": "Upgrade to Business",
+                "highlight": true,
+                "features": [
+                    "All Pro features",
+                    "Automated WhatsApp Reminders",
+                    "Professional WhatsApp Templates",
+                    "Safe Delay & Anti-Spam System",
+                    "Protected Monthly Limits",
+                    "Priority Reminder Queue"
+                ],
+                "disclaimer": "WhatsApp reminders use third-party integration and are not an official WhatsApp or Meta product."
             }
         }
     },
@@ -246,36 +295,45 @@
     "Terms": {
         "title": "Terms of Service",
         "last_updated": "Last updated:",
-        "intro": "By accessing or using <strong>Ingetin</strong>, you agree to be bound by these terms. If you disagree with any part of the terms, you may not use our service.",
+        "intro": "By registering with <strong>Ingetin</strong>, you acknowledge that this service uses third-party automation technology and carries inherent risks.",
         "sections": {
-            "account": {
-                "title": "1. Account Terms",
-                "content": "To access certain features, you must register for an account. You agree to provide accurate information and keep your password secure. You are responsible for all activities under your account."
-            },
-            "usage": {
-                "title": "2. Acceptable Use",
-                "content": "You agree not to misuse the Service. Prohibited actions include:",
+            "disclaimer": {
+                "title": "⚠️ CRITICAL: Disclaimer of Warranty",
+                "content": "Ingetin is an independent service and is <strong>NOT affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp Inc. or Meta Platforms, Inc.</strong>",
                 "list": [
-                    "Sending spam or harassing messages via our reminder system.",
-                    "Using the service for illegal activities or fraud.",
-                    "Attempting to hack or disrupt our servers."
+                    "This service operates using an unofficial API protocol.",
+                    "We are NOT responsible if your WhatsApp number is banned or suspended by Meta due to the use of this service.",
+                    "Service stability depends on WhatsApp Web updates. Functionality may be temporarily interrupted if WhatsApp releases major code changes."
                 ]
             },
+            "account": {
+                "title": "1. Account Terms",
+                "content": "You are fully responsible for maintaining the confidentiality of your WhatsApp session. Do not share your QR Code access with unauthorized parties."
+            },
+            "anti_spam": {
+                "title": "2. Anti-Spam Policy (Zero Tolerance)",
+                "content": "We enforce a zero-tolerance policy against SPAM. Your account will be <strong>permanently banned without refund</strong> if you are detected:",
+                "list": [
+                    "Sending bulk messages to numbers that have not saved your contact.",
+                    "Sending unsolicited promotions/gambling/scam messages.",
+                    "Receiving a high volume of 'Block & Report' flags from message recipients."
+                ]
+            },
+            "usage": {
+                "title": "3. Acceptable Use",
+                "content": "This service is intended for transactional notifications (Invoices, OTPs, Reminders) to existing customers. Using this service for 'Cold Marketing' (Blasting strangers) is strictly prohibited."
+            },
             "payment": {
-                "title": "3. Payments & Subscriptions",
-                "content": "Some features are paid. Fees are non-refundable unless required by law. We reserve the right to change our pricing with prior notice."
+                "title": "4. Payments & Refunds",
+                "content": "This is a prepaid subscription service. No refunds will be issued if your account is terminated due to Anti-Spam violations or if your WhatsApp number is banned by Meta."
             },
             "termination": {
-                "title": "4. Termination",
-                "content": "We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms."
+                "title": "5. Termination",
+                "content": "We reserve the right to terminate your access immediately if we detect abnormal traffic patterns or illegal activities."
             },
-            "limitation": {
-                "title": "5. Limitation of Liability",
-                "content": "Ingetin shall not be liable for any indirect, incidental, or consequential damages resulting from your use of the service."
-            },
-            "contact": {
-                "title": "6. Contact Us",
-                "content": "If you have any questions about these Terms, please contact us at"
+            "liability": {
+                "title": "6. Limitation of Liability",
+                "content": "In no event shall Ingetin be liable for any lost profits, lost chat data, or business interruptions arising out of the use of or inability to use this service."
             }
         }
     },
@@ -330,6 +388,7 @@
                 "hide": "Hide password"
             }
         },
+        "checkbox_terms": "I agree to the <a href='/terms'>Terms of Service</a> and understand the risks of using an Unofficial API.",
         "buttons": {
             "submit": "Create Account",
             "submitting": "Processing..."

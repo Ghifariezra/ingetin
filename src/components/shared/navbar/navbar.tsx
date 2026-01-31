@@ -49,7 +49,12 @@ export default function Navbar() {
     const linksItem = [
         {
             label: links("home.label"),
-            labelNavs: ["Introduction", "Problem", "Solution"],
+            labelNavs: [
+                "Introduction",
+                "Problem",
+                "TargetUsers",
+                "Solution"
+            ],
             href: links("home.href"),
         },
         {
@@ -148,13 +153,13 @@ function MobileMenu({ navItems, links, title }: { navItems: NavItem[], links: (k
                 </Button>
             </SheetTrigger>
 
-            <SheetContent 
-                side="right" 
+            <SheetContent
+                side="right"
                 className="w-75 sm:w-100 bg-white dark:bg-slate-950 border-l border-slate-200 dark:border-slate-800"
             >
                 <SheetHeader className="text-left mb-6">
                     <SheetTitle>
-                        <Logo 
+                        <Logo
                             title={title}
                             hideText
                         />

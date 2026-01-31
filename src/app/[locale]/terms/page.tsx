@@ -6,12 +6,13 @@ export default function TermsPage() {
             namespace="Terms"
             variant="blue" 
             sectionKeys={[
+                "disclaimer",
                 "account",
+                "anti_spam",
                 "usage",
                 "payment",
                 "termination",
-                "limitation",
-                "contact"
+                "liability",
             ]}
         />
     );

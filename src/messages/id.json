@@ -2,7 +2,7 @@
     "App": {
         "title": "Ingetin",
         "description": "Sahabat UMKM agar tagihan lancar.",
-        "version": "v0.5.0"
+        "version": "v0.5.1"
     },
     "Dashboard": {
         "title": "Dashboard",
@@ -59,37 +59,57 @@
     "Home": {
         "Introduction": {
             "label": "Perkenalan",
-            "title": "Nagih Klien Tanpa Rasa 'Ga Enakan'",
-            "description": "Solusi otomatisasi penagihan invoice untuk freelancer dan UMKM agar cashflow tetap lancar.",
+            "title": "Nagih Klien Tanpa Rasa Tidak Enak",
+            "description": "Ingetin membantu freelancer dan UMKM menagih invoice secara otomatis, sopan, dan profesional — tanpa harus ngejar-ngejar klien lagi.",
             "href": "#perkenalan",
-            "subtitle": "Catat orderanmu, lalu biarkan sistem kami mengirim pengingat tagihan yang sopan & profesional secara otomatis. Kamu fokus berkarya, biar kami yang urus drama penagihan.",
+            "subtitle": "Cukup catat orderanmu sekali. Sistem kami akan mengingatkan klien secara otomatis saat mendekati jatuh tempo. Kamu fokus kerja, pembayaran datang tepat waktu.",
             "cta_primary": "Coba Gratis Sekarang",
             "cta_primary_href": "/daftar",
-            "cta_secondary": "Lihat Cara Kerja",
+            "cta_secondary": "Lihat Cara Kerjanya",
             "cta_secondary_href": "#solusi"
         },
         "Problem": {
             "label": "Masalah",
-            "title": "Pernah Mengalami Ini?",
-            "description": "Masalah klasik yang sering menghambat pertumbuhan bisnis dan kesehatan cashflow-mu.",
+            "title": "Masalah yang Terlihat Sepele, Tapi Bikin Stres",
+            "description": "Ini bukan soal malas menagih. Ini soal sistem yang tidak mendukung bisnismu tumbuh.",
             "href": "#masalah",
             "items": [
-                "Chat orderan tertumpuk, lupa siapa yang belum lunas.",
-                "Mau menagih tapi sungkan, takut dianggap galak atau tidak sopan.",
-                "Di atas kertas untung besar, tapi uang cash tidak ada di tangan."
+                "Orderan nyampur di chat, lupa mana yang sudah atau belum dibayar.",
+                "Mau nagih tapi sungkan, takut merusak hubungan dengan klien.",
+                "Omzet terlihat besar, tapi uangnya belum masuk ke rekening."
+            ]
+        },
+        "TargetUsers": {
+            "label": "Untuk Kamu",
+            "title": "Dibuat untuk Kamu yang Kerja Mandiri",
+            "description": "Ingetin cocok untuk siapa pun yang mengandalkan pembayaran tepat waktu agar bisnis tetap jalan.",
+            "href": "#untuk-kamu",
+            "items": [
+                {
+                    "title": "Freelancer",
+                    "desc": "Desainer, developer, penulis, konsultan, dan profesional lepas yang rutin menagih invoice ke klien."
+                },
+                {
+                    "title": "UMKM & Bisnis Kecil",
+                    "desc": "Agensi, studio, dan usaha lokal yang mengelola banyak klien sekaligus."
+                },
+                {
+                    "title": "Side Hustler",
+                    "desc": "Pekerja kantoran dengan proyek sampingan yang butuh sistem penagihan rapi dan otomatis."
+                }
             ]
         },
         "Solution": {
             "label": "Solusi",
-            "title": "Rapikan Bisnis dalam 3 Langkah",
-            "description": "Sistem simpel untuk mengubah cara kamu mengelola piutang klien selamanya.",
+            "title": "Cara Lebih Profesional untuk Menagih",
+            "description": "Tanpa template ribet, tanpa follow-up manual.",
             "href": "#solusi",
             "step_1": "1. Catat Order",
-            "step_1_desc": "Cukup masukkan nama klien, detail order, dan tanggal jatuh tempo.",
+            "step_1_desc": "Masukkan data klien, nominal, dan tanggal jatuh tempo.",
             "step_2": "2. Pantau Dashboard",
-            "step_2_desc": "Lihat status pembayaran secara real-time: siapa yang lunas dan siapa yang menunggak.",
+            "step_2_desc": "Lihat status pembayaran dan total invoice yang belum lunas.",
             "step_3": "3. Terima Pembayaran",
-            "step_3_desc": "Sistem akan mengirim email pengingat otomatis (H-3, Hari H, Lewat Jatuh Tempo). Kamu tinggal terima notifikasi lunas."
+            "step_3_desc": "Ingetin mengirim pengingat otomatis yang sopan. Kamu tinggal terima notifikasi saat pembayaran masuk."
         }
     },
     "Features": {
@@ -110,6 +130,12 @@
                 "title": "Email Reminder Otomatis",
                 "tag": "Fitur Unggulan",
                 "description": "Sistem mengirim email H-3, Hari H, dan saat telat secara otomatis. Bahasa sopan, menggunakan nama usahamu, dan terlihat profesional."
+            },
+            "whatsapp_reminder": {
+                "title": "WhatsApp Reminder Otomatis",
+                "tag": "Premium",
+                "description": "Kirim pengingat pembayaran langsung ke WhatsApp klien Anda. Lebih cepat dibaca, tetap sopan, dan tidak perlu menagih manual lagi.",
+                "note": "Disarankan hanya untuk klien yang sudah pernah bertransaksi."
             }
         }
     },
@@ -118,6 +144,10 @@
         "description": "Pilihan paket fleksibel sesuai tahap bisnismu. Transparan, tanpa biaya tersembunyi.",
         "href": "#pricing",
         "subtitle": "Satu tagihan cair tepat waktu saja seringkali sudah menutup biaya langganan ini.",
+        "WhatsAppSafety": {
+            "title": "Aman & Bertanggung Jawab",
+            "content": "WhatsApp Reminder hanya untuk notifikasi transaksi ke klien yang sudah pernah berinteraksi. Bukan untuk broadcast atau promosi massal."
+        },
         "Plans": {
             "Free": {
                 "name": "Mulai Dulu",
@@ -141,8 +171,27 @@
                     "Semua fitur Gratis",
                     "Kirim Email Tagihan Otomatis",
                     "Penjadwalan (H-3, H, H+3)",
-                    "Template Email Profesional"
+                    "Template Email Profesional",
+                    "Laporan Pengiriman Email"
                 ]
+            },
+            "Business": {
+                "name": "Paling Laris",
+                "badge": "Bundle",
+                "price": "Rp 59.000",
+                "period": "/ bulan",
+                "description": "Untuk bisnis yang ingin tagihan dibaca dan dibayar lebih cepat.",
+                "cta": "Aktifkan Business",
+                "highlight": true,
+                "features": [
+                    "Semua fitur Pro",
+                    "WhatsApp Reminder Otomatis",
+                    "Template WhatsApp Profesional",
+                    "Delay Aman & Anti-Spam",
+                    "Limit Bulanan Terproteksi",
+                    "Prioritas Antrian Reminder"
+                ],
+                "disclaimer": "WhatsApp Reminder menggunakan integrasi pihak ketiga dan bukan produk resmi WhatsApp atau Meta."
             }
         }
     },
@@ -244,38 +293,47 @@
         }
     },
     "Terms": {
-        "title": "Syarat & Ketentuan",
+        "title": "Syarat & Ketentuan Layanan",
         "last_updated": "Terakhir diperbarui:",
-        "intro": "Dengan mengakses atau menggunakan <strong>Ingetin</strong>, Anda setuju untuk terikat oleh syarat-syarat ini. Jika Anda tidak setuju dengan bagian mana pun, Anda tidak diperbolehkan menggunakan layanan kami.",
+        "intro": "Dengan mendaftar di <strong>Ingetin</strong>, Anda memahami bahwa layanan ini menggunakan teknologi otomatisasi pihak ketiga dan memiliki risiko tertentu.",
         "sections": {
-            "account": {
-                "title": "1. Ketentuan Akun",
-                "content": "Untuk mengakses fitur tertentu, Anda wajib mendaftar akun. Anda setuju untuk memberikan informasi yang akurat dan menjaga keamanan kata sandi Anda. Anda bertanggung jawab penuh atas aktivitas di akun Anda."
-            },
-            "usage": {
-                "title": "2. Penggunaan yang Diperbolehkan",
-                "content": "Anda setuju untuk tidak menyalahgunakan Layanan. Tindakan yang dilarang meliputi:",
+            "disclaimer": {
+                "title": "⚠️ PENTING: Penyangkalan (Disclaimer)",
+                "content": "Ingetin adalah layanan independen dan <strong>TIDAK berafiliasi, disponsori, atau didukung oleh WhatsApp Inc. atau Meta Platforms, Inc.</strong>",
                 "list": [
-                    "Mengirim spam atau pesan yang mengganggu melalui sistem pengingat kami.",
-                    "Menggunakan layanan untuk aktivitas ilegal atau penipuan.",
-                    "Mencoba meretas atau mengganggu server kami."
+                    "Layanan ini menggunakan protokol tidak resmi (Unofficial API).",
+                    "Kami tidak bertanggung jawab atas pemblokiran (Banned) nomor WhatsApp Anda oleh pihak Meta akibat penggunaan layanan ini.",
+                    "Stabilitas layanan bergantung pada pembaruan dari WhatsApp Web. Jika terjadi perubahan besar pada WhatsApp, layanan mungkin mengalami gangguan sementara."
                 ]
             },
+            "account": {
+                "title": "1. Ketentuan Akun & Pendaftaran",
+                "content": "Anda bertanggung jawab penuh menjaga kerahasiaan sesi (session) WhatsApp Anda. Jangan membagikan akses QR Code kepada pihak lain."
+            },
+            "anti_spam": {
+                "title": "2. Kebijakan Anti-Spam (Zero Tolerance)",
+                "content": "Kami menerapkan kebijakan toleransi nol terhadap SPAM. Akun Anda akan <strong>diblokir permanen tanpa refund</strong> jika terdeteksi melakukan:",
+                "list": [
+                    "Mengirim pesan massal ke nomor yang tidak menyimpan kontak Anda.",
+                    "Mengirim pesan promosi/judi/penipuan yang tidak diinginkan penerima.",
+                    "Menerima laporan 'Block & Report' dalam jumlah tinggi dari penerima pesan."
+                ]
+            },
+            "usage": {
+                "title": "3. Batasan Penggunaan",
+                "content": "Layanan ini ditujukan untuk notifikasi transaksional (Invoice, OTP, Reminder) kepada pelanggan yang sudah berinteraksi dengan Anda. Penggunaan untuk 'Cold Marketing' (Blast promosi ke orang asing) sangat tidak disarankan."
+            },
             "payment": {
-                "title": "3. Pembayaran & Berlangganan",
-                "content": "Beberapa fitur berbayar. Biaya tidak dapat dikembalikan kecuali diwajibkan oleh hukum. Kami berhak mengubah harga dengan pemberitahuan sebelumnya."
+                "title": "4. Pembayaran & Pengembalian Dana",
+                "content": "Layanan berbasis langganan prabayar. Tidak ada pengembalian dana (Refund) jika akun Anda dihentikan karena pelanggaran kebijakan Anti-Spam atau jika nomor WhatsApp Anda diblokir oleh pihak Meta."
             },
             "termination": {
-                "title": "4. Penghentian Layanan",
-                "content": "Kami dapat menangguhkan atau menghentikan akun Anda segera, tanpa pemberitahuan sebelumnya, atas alasan apa pun, termasuk jika Anda melanggar Syarat & Ketentuan ini."
+                "title": "5. Penghentian Layanan",
+                "content": "Kami berhak menghentikan akses Anda secara sepihak jika terdeteksi adanya lalu lintas data yang tidak wajar atau melanggar hukum Indonesia."
             },
-            "limitation": {
-                "title": "5. Batasan Tanggung Jawab",
-                "content": "Ingetin tidak bertanggung jawab atas kerugian tidak langsung, insidental, atau konsekuensial yang diakibatkan oleh penggunaan layanan ini."
-            },
-            "contact": {
-                "title": "6. Hubungi Kami",
-                "content": "Jika Anda memiliki pertanyaan, silakan hubungi kami di <a href='mailto:support@ingetin.app'>support@ingetin.app</a>."
+            "liability": {
+                "title": "6. Batasan Tanggung Jawab",
+                "content": "Ingetin tidak bertanggung jawab atas kerugian bisnis, kehilangan data chat, atau kerugian finansial yang timbul akibat penggunaan atau ketidakmampuan menggunakan layanan ini."
             }
         }
     },
@@ -330,6 +388,7 @@
                 "hide": "Sembunyikan sandi"
             }
         },
+        "checkbox_terms": "Saya setuju dengan <a href='/terms'>Syarat & Ketentuan</a> dan memahami risiko penggunaan Unofficial API.",
         "buttons": {
             "submit": "Buat Akun",
             "submitting": "Memproses..."

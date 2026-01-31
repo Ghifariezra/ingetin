@@ -6,7 +6,7 @@ export function DocsContact() {
 
     return (
         <div className="mt-12 text-center">
-            <ContactManager content={t.raw("contact")} />
+            <ContactManager content={t.raw("content")} />
         </div>
     );
 }

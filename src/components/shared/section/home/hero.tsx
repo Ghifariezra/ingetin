@@ -9,6 +9,8 @@ import { cn } from "@/_lib/utils"; // Pastikan import cn
 import { BadgeManager } from "@/components/shared/badge/badge";
 import { BlobHero } from "@/components/shared/decoration/blob";
 import { PatternHero } from "@/components/shared/decoration/pattern";
+// import React, { useState } from "react";
+// import WhatsAppQR from "../../qr-code/WhatsAppQR";
 
 export default function HeroSection({
     title,
@@ -70,6 +72,7 @@ export default function HeroSection({
 
             <div className="flex justify-center px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 xl:flex xl:justify-between xl:w-full items-center">
+                    
 
                     {/* --- Left Column: Text Content --- */}
                     <div className="flex flex-col items-center text-center lg:items-start lg:text-left space-y-8 animate-in fade-in slide-in-from-bottom-5 duration-700">

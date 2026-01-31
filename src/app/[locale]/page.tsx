@@ -4,6 +4,7 @@ import SolutionSection, { StepItem } from "@/components/shared/section/home/solu
 import { useTranslations } from "next-intl";
 import { ClipboardList, LayoutDashboard, BadgeCheck } from "lucide-react";
 import { MainContainer } from "@/components/shared/section/main";
+import TargetUserSection from "@/components/shared/section/home/target.users";
 
 export default function HomePage() {
     const app = useTranslations("App");
@@ -47,6 +48,14 @@ export default function HomePage() {
                 title={t("Problem.title")}
                 items={problemItems}
                 hrefSection={t("Problem.href")}
+            />
+
+            <TargetUserSection
+                label={t("TargetUsers.label")}
+                title={t("TargetUsers.title")}
+                description={t("TargetUsers.description")}
+                hrefSection={t("TargetUsers.href")}
+                items={t.raw("TargetUsers.items")}
             />
 
             <SolutionSection
